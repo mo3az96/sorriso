@@ -1,7 +1,7 @@
 //  header
 
 header {
-  padding: 15px 0;
+  padding: 43px 0 0;
   position: fixed;
   background-color: transparent;
   z-index: 20;
@@ -9,12 +9,14 @@ header {
   left: 0;
   width: 100%;
   transition: all ease-in-out 0.2s;
+  @include sm {
+    padding: 15px 0;
+  }
 }
 
 .fixed-header {
-  padding: 10px 0;
   .logo img {
-    width: 55px;
+    width: 100px;
   }
   .logo .logo-light {
     opacity: 1;
@@ -39,14 +41,15 @@ header {
   a {
     width: 60px;
     height: 37px;
-    background-color: rgba($color: #fff, $alpha: 0.102);
+    border-radius: 20px;
+    background-color: rgba(#fff, 0.102);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color ease-in-out 0.2s;
 
     &:hover {
-      background-color: $light-green;
+      background-color: $secondary-color;
     }
     .icon {
       color: #fff;
@@ -73,20 +76,22 @@ header {
     width: 16.145%;
   }
 }
-
+.links-bars-holder {
+  justify-content: flex-end;
+}
 .blur-header {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 20px 0px;
   backdrop-filter: saturate(180%) blur(7px);
   background-color: rgba($color: #fff, $alpha: 0.9);
   padding: 10px 0;
   .openBtn i {
-    color: $dark-green;
+    color: $primary-color;
   }
 
   .big-menu li a {
-    color: $dark-green;
+    color: $primary-color;
     &:hover {
-      color: #cedd42;
+      color: $secondary-color;
       // color: #84ccbd;
     }
   }
@@ -100,9 +105,9 @@ header {
     visibility: hidden;
   }
   .header-links a {
-    background-color: #367359;
+    background-color: $primary-color;
     &:hover {
-      background-color: #46a351;
+      background-color: $secondary-color;
       .icon {
         color: #fff;
       }
@@ -119,7 +124,7 @@ header {
 .logo {
   position: relative;
   img {
-    width: 68px;
+    width: 150px;
     transition: all linear 0.3s;
   }
   .logo-light {
@@ -149,7 +154,7 @@ header {
       text-transform: capitalize;
       transition: all linear 0.2s;
       &:hover {
-        color: #cedd42;
+        color: $secondary-color;
       }
     }
   }
@@ -157,7 +162,7 @@ header {
 
 @include min-992 {
   .big-menu li a.active {
-    color: #cedd42;
+    color: $secondary-color;
   }
   .openBtn {
     display: none;
@@ -214,7 +219,7 @@ header {
     display: none;
     width: 100%;
     height: 100vh;
-    background-color: $dark-green;
+    background-color: $primary-color;
     z-index: -1;
     padding: 20px;
     padding-top: 28px;
@@ -282,14 +287,12 @@ header {
   .logo img {
     width: 55px;
   }
-  .blur-header{
-    .logo img{
+  .blur-header {
+    .logo img {
       width: 50px;
     }
   }
 }
-
-
 
 .header-mob {
   .openBtn i {
@@ -306,7 +309,7 @@ header {
   .header-links a {
     background-color: rgba(255, 255, 255, 0.102);
     &:hover {
-      background-color: #46a351;
+      background-color: $secondary-color;
       .icon {
         color: #fff;
       }
@@ -315,7 +318,7 @@ header {
   .big-menu li a {
     color: #fff;
     &:hover {
-      color: #cedd42;
+      color: $secondary-color;
     }
   }
 }

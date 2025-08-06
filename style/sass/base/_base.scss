@@ -1,7 +1,8 @@
 // variables
-$dark-yellow: #aad037;
-$dark-green: #367359;
-$light-green : #46a351;
+$primary-color: #4f018b;
+$secondary-color: #ff9900;
+$tertiary-color: #ff9900;
+$text-color: #000000;
 
 * {
   margin: 0;
@@ -16,13 +17,13 @@ body {
 
 .sub-title {
   font-size: 22px;
- color: #46a351;
+  color: #808080;
   font-weight: 400;
   text-align: center;
 }
 .general-title {
   font-size: 34px;
-  color: #000;
+  color: $primary-color;
   font-weight: 700;
   text-align: center;
   margin-bottom: 0;
@@ -71,7 +72,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $dark-green;
+  background: $primary-color;
 }
 
 ::-webkit-scrollbar-track {
@@ -90,7 +91,7 @@ button {
 
   text-transform: capitalize;
   &:hover {
-    color:#46a351;
+    color: $secondary-color;
     text-decoration: underline;
   }
 }
@@ -118,7 +119,7 @@ button {
 .bread-link {
   transition: all linear 0.2s;
   &:hover {
-    color: #46a351;
+    color: $secondary-color;
   }
 }
 
@@ -159,7 +160,7 @@ ol.breadcrumb li span {
   left: -100%;
   width: 90%;
   height: 100%;
-  background-color: #46a351;
+  background-color: $secondary-color;
   animation: preloaderAnimation 3s infinite linear;
 }
 
@@ -190,14 +191,14 @@ ol.breadcrumb li span {
   position: fixed;
   z-index: 10;
   &:hover {
-    background-color: $dark-green;
+    background-color: $primary-color;
     .toTop-icon {
       color: #fff;
     }
   }
   .toTop-icon {
     font-size: 14px;
-    color: #367359;
+    color: $primary-color;
     transition: all linear 0.2s;
   }
 }

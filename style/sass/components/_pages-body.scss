@@ -10,7 +10,7 @@
 
 .pages-body {
   .big-menu li a {
-    color: $dark-green;
+    color: $primary-color;
     &:hover {
       color: #cedd42;
     }
@@ -24,16 +24,16 @@
     visibility: visible;
   }
   .header-links a {
-    background-color: $dark-green;
+    background-color: $primary-color;
     .icon {
       color: #fff;
     }
     &:hover {
-      background-color: #46a351;
+      background-color: $secondary-color;
     }
   }
   .openBtn i {
-    color: $dark-green;
+    color: $primary-color;
   }
 }
 
@@ -43,7 +43,7 @@
   .page-sec-head {
     font-size: 24px;
     text-transform: capitalize;
-    color: #000;
+    color: $text-color;
     font-weight: 700;
     text-align: start;
     margin-bottom: 40px;
@@ -51,7 +51,7 @@
   .page-sec-para {
     font-size: 18px;
     line-height: 36px;
-    color: #000;
+    color: $text-color;
     text-align: justify;
     margin-bottom: 0;
   }

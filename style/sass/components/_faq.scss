@@ -3,7 +3,7 @@
   padding-top: 150px;
   padding-bottom: 120px;
   .title-text {
-    color: $dark-green;
+    color: $primary-color;
   }
   .sub-title {
     margin-bottom: 35px;
@@ -30,7 +30,7 @@
   .ques-text,
   .ques-details .icon,
   .ques-num {
-    color:  #46a351;
+    color:  $secondary-color;
   }
   .ques-details .icon {
     transform: rotate(180deg);
@@ -55,7 +55,7 @@
   font-size: 18px;
   transition: all ease-in-out 0.1s;
   line-height: 34px;
-  color: #000;
+  color: $text-color;
   font-weight: 700;
   margin: 0;
   margin-inline-start: 25px;
@@ -75,7 +75,7 @@
   }
 }
 .ques-answer {
-  color: #000;
+  color: $text-color;
   width: 839px;
   padding-inline-start: 50px;
   font-size: 16px;

@@ -3,7 +3,7 @@
   padding-bottom: 120px;
   .title-text {
     font-size: 30px;
-    color: #000;
+    color: $text-color;
     font-weight: 700;
     text-align: center;
     margin-bottom: 55px;
@@ -54,11 +54,11 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: $text-color;
     opacity: 0.302;
   }
   .swiper-pagination-bullet-active {
-    background-color: #46a351;
+    background-color: $secondary-color;
     opacity: 1;
   }
 }

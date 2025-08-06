@@ -4,7 +4,7 @@
   padding-top: 60px;
 }
 .download-bg {
-  background-color: $dark-green;
+  background-color: $primary-color;
   height: 326px;
   .container {
     height: 100%;
@@ -60,7 +60,8 @@
     align-items: center;
     justify-content: center;
     height: 54px;
-    background-color: #000;
+    border-radius: 30px;
+    background-color: #270045;
     img {
       width: 129px;
     }
@@ -68,7 +69,7 @@
 }
 
 .download-app .download-links a:hover {
- background-color: #46a351;
+  background-color: $secondary-color;
 }
 
 @include max-1200 {
@@ -78,7 +79,7 @@
 }
 
 @include max-992 {
-    .download-parent {
+  .download-parent {
     width: 100%;
   }
   .download-parent .cta-mob {

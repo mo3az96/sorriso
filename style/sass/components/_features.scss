@@ -1,15 +1,15 @@
 .features {
-  background-color: $dark-green;
-  height: 822px;
+  background-color: $primary-color;
+  min-height: 822px;
   overflow: hidden;
   padding-top: 115px;
   padding-bottom: 100px;
+  position: relative;
 
   .titles-parent {
     align-items: flex-start;
     margin-bottom: 45px;
   }
-  position: relative;
   .mobile-hand-img {
     position: absolute;
     z-index: 5;
@@ -42,7 +42,7 @@
   justify-content: flex-end;
 }
 .features-cont {
-  width: 520px;
+  width: 555px;
 }
 .list-item {
   display: flex;
@@ -61,14 +61,14 @@
     width: 59px;
     height: 59px;
     border-radius: 50%;
-    background-color: $dark-yellow;
+    background-color: $tertiary-color;
     display: flex;
     align-items: center;
     justify-content: center;
     .icon {
       font-size: 24px;
       text-align: center;
-      color: #367359;
+      color: $primary-color;
     }
   }
 }
@@ -93,8 +93,6 @@
     right: 10%;
   }
 }
-
-
 
 @include max-1200 {
   .features .general-title {
