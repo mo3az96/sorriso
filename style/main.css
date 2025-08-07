@@ -1060,8 +1060,9 @@ header {
 }
 .logo .logo-light {
   position: absolute;
-  top: 0;
-  inset-inline-start: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
 }
@@ -1210,10 +1211,10 @@ header {
     font-size: 24px;
   }
   .logo img {
-    width: 55px;
+    width: 120px;
   }
   .blur-header .logo img {
-    width: 50px;
+    width: 100px;
   }
 }
 .header-mob .openBtn i {
