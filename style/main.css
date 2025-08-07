@@ -870,12 +870,11 @@ ol.breadcrumb li span {
   border-radius: 30px;
   background-color: #270045;
 }
+.download-links a:hover {
+  background-color: #ff9900;
+}
 .download-links a img {
   width: 129px;
-}
-
-.download-app .download-links a:hover {
-  background-color: #ff9900;
 }
 
 @media only screen and (max-width: 1199px) {

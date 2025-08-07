@@ -62,14 +62,13 @@
     height: 54px;
     border-radius: 30px;
     background-color: #270045;
+    &:hover {
+      background-color: $secondary-color;
+    }
     img {
       width: 129px;
     }
   }
-}
-
-.download-app .download-links a:hover {
-  background-color: $secondary-color;
 }
 
 @include max-1200 {
